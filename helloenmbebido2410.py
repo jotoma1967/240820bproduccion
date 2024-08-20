@@ -57,17 +57,35 @@ except ImportError:
 
     from flask import  render_template  
 
+
+
 app = Flask(__name__)
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-if __name__ == '__main240820c__':
+if __name__ == '__main__':
      app.run(debug=True)
 
-app = Flask(__name__)
 '''
+@app.route('/')
+def get_data():
+    name1 = 'Alfonso'
+    return render_template('index.html', name1)
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+     app.run(debug=True)
+
+
+app = Flask(__name__)
+
 @app.route("/")
 def index():
     return "<h1>Hello!</h1>"
