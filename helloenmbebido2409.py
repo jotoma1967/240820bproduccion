@@ -56,7 +56,7 @@ def index():
     return "<h1>Hello!  helloembebido2409</h1>"
 
 if __name__ == "__main__":
-    app.run(debug=True, host="216.24.57.252")
+    app.run(debug=True, host="127.0.0.1", port =5010)
     '''
     from waitress import serve
     serve(app, host="0.0.0.0", port=10000)
